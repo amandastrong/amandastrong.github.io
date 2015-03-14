@@ -92,13 +92,15 @@ a:active{
 /* Homepage */
 
 .homepage {
-	background: #0e0e0f;
 	width: 100%;
 	height: auto;
 	min-height: 600px;
 	margin-top: -10px;
 	padding-top: 100px;
 	font-family: 'Rock Salt', cursive;
+	background-color: #0e0e0f;
+	/* Background from transparenttextures.com */
+	background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
 }
 
 /* Homepage Text from Codepen by Digisam */
@@ -133,22 +135,26 @@ a:active{
 /* Bio & Resume */
 
 .sidebar {
-	background: #fffcf8;
 	height: auto;
 	color: black;
 	padding-top: 70px;
 	width: 100%;
 	margin-top: 0;
 	float: left;
+	/*Background from TransparentTextures.com*/
+	background-color: #fffcf8;
+	background-image: url(http://www.transparenttextures.com/patterns/blizzard.png);
 }
 
 .resume {
 	width: 100%;
 	height: auto;
-	background: #fffcf8;
 	padding-top: 10px;
 	border-top: dashed 1.5px #a9f5d7;
 	float: left;
+	/*Background from TransparentTextures.com*/
+	background-color: #fffcf8;
+	background-image: url(http://www.transparenttextures.com/patterns/blizzard.png);
 }
 
 .content {
@@ -165,10 +171,12 @@ a:active{
 	width: 33%;
 	margin-top: 5px;
 	float: left;
-	background: #fffcf8;
 	height: auto;
 	color: black;
 	padding-top: 10px;
+	/*Background from TransparentTextures.com*/
+	background-color: #fffcf8;
+	background-image: url(http://www.transparenttextures.com/patterns/blizzard.png);
 }
 
 /* Portfolio */
@@ -185,12 +193,15 @@ a:active{
 }
 
 .portfolio {
-	background: #fffcf8;
 	width: 100%;
 	height: 600px;
 	padding-top: 0;
 	float: left;
+	/*Background from TransparentTextures.com*/
+	background-color: #fffcf8;
+	background-image: url(http://www.transparenttextures.com/patterns/blizzard.png);
 }
+
 
 /* Contact */
 
@@ -206,13 +217,13 @@ a:active{
 }
 
 .contact {
-	width: 40%;
+	width: 45%;
 	height: auto;
 	float: left;
 }
 
 .social {
-	width: 60%;
+	width: 50%;
 	height: auto;
 	float: left;
 }
@@ -323,20 +334,17 @@ a:active{
 /* Style-Tile */
 
 .text {
-	background: purple;
+	background: #a9f5d7;
 	width: 100%;
-	height: 300px;
-	padding-top: 100px;
+	height: auto;
+	margin-top: 0;
+	padding-bottom: 30px;
 	float: left;
+	text-align: center;
+	border-bottom: dashed 1.5px black;
 }
 
-.style {
-	background: blue;
-	width: 100%;
-	height: 300px;
-	padding-top: 100px;
-	float: left;
-}
+
 
 /* Styling */
 
@@ -344,9 +352,15 @@ a:active{
 .content h1,
 .content2 h1,
 .portfolio_about h1 {
-	font-size: 3em;
+	font-size: 2em;
 	margin-bottom: 0;
 	padding-left: 10px;
+	color: #0e0e0f
+}
+
+h3,
+h4 {
+	color:#0e0e0f;
 }
 
 .sidebar p,
@@ -355,6 +369,12 @@ a:active{
 	padding-left: 12px;
 	font-size: 1.2em;
 	font-family: 'Pontano Sans', sans-serif;
+}
+
+.contact {
+	font-size: 1.2em;
+	font-family: 'Pontano Sans', sans-serif;
+	padding-left: 4%;
 }
 
 .profile-pic {
@@ -377,9 +397,12 @@ a:active{
 	max-width: 300px;
 }
 
-.intro p{
+.intro {
 	font-size: 1.4em;
+	margin-top: 30px;
+	margin-bottom: 0;
 }
+
 
 /* CSS Arrow Box from cssarrowplease.com */
 
@@ -426,8 +449,75 @@ a:active{
 	padding-left: 15px;
 }
 
-.contact p {
-	padding-left: 4%;
+.text .headline h1 {
+	font-family: 'Rock Salt', cursive;
+	font-size: 3em;
+	color: white;
+	margin-top: 50px;
+	padding: 0;
+}
+
+.text .headline p {
+	color: white;
+	font-size: 1.2em;
+	font-family: 'Pontano Sans', sans-serif;
+	margin-top: -40px;
+}
+
+.text h1 {
+	font-size: 2em;
+	color: #0e0e0f;
+}
+
+.text h2{
+	color: #0e0e0f
+}
+
+.text p{
+	font-size: 1.2em;
+}
+
+.color-1{
+  background-color: white;
+}
+
+.color-2{
+ 	background-color: #fffcf8;
+	background-image: url(http://www.transparenttextures.com/patterns/blizzard.png);
+}
+
+.color-3{
+  background-color: #a9f5d7;
+}
+
+.color-4{
+	background-color: #0e0e0f;
+	background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.imagery-1,
+.imagery-2,
+.imagery-3 {
+	border: 1px solid #000;
+	border-radius: 50%;
+	float: left;
+	margin: 5px 15px;
+	height: 60px;
+	width: 60px;
+}
+
+.text .head2{
+	margin-left: 4%;
+
+	text-align: left;
+}
+
+.center {
+	margin-left: 2%;
 }
 
 /*---------------Gallery---------------------------*/
@@ -439,18 +529,20 @@ a:active{
 
 .fullsize {
   position: relative;
-  margin-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fullsize img {
   position: absolute;
   top: 0px;
-  width: 80%;
+  width: 93%;
   min-width: 200px;
 }
 
 .thumbs {
-	margin-left: 10%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .thumbs img {
@@ -580,7 +672,9 @@ a:active{
   		padding-left: 2%;
 	}
 
-	.m-panel__header {
+	.m-panel__header,
+	.text .headline,
+	 {
   		font-size: 3em;
 	}
 
@@ -594,9 +688,12 @@ a:active{
 		font-size: 2.5em;
 	}
 
-	.sidebar p
+	.sidebar p,
+	.content,
+	.content2,
 	.contact_info p,
-	.portfolio_about p {
+	.portfolio_about p,
+	.text {
 		font-size: 1em;
 	}
 
@@ -612,8 +709,6 @@ a:active{
   		padding: 3%;
   		width: 10em;
 	}
-
-
 
 }
 
