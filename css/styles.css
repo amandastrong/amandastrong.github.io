@@ -54,7 +54,6 @@ nav a {
 /* First Frame */
 nav ul{  
 	transition: opacity 4s;
-	transition: height 3s;
 }
 
 /* Last Frame */
@@ -62,10 +61,32 @@ nav ul{
 nav:hover ul,
 nav:active ul{
   opacity: 1;
-  transition: opacity;
+  transition: opacity 2s;
 }
 
 /*---------------*/
+/* First Frame */
+.quote p{
+	transition: opacity 10s;
+	opacity: 0;
+	color: white;
+	text-align: right;
+	margin-top: -90px;
+	padding-top: 190px;
+	padding-right: 20px;
+	height: 200px;
+	font-size: 1.2em;
+}
+
+/* Last Frame */
+.quote:hover p,
+.quote:active p {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+
+/*--------------*/
 
 a:link,
 a:visited{
@@ -93,7 +114,7 @@ a:active{
 
 .homepage {
 	width: 100%;
-	height: auto;
+	height: 640px;
 	min-height: 600px;
 	margin-top: -10px;
 	padding-top: 100px;
@@ -201,7 +222,6 @@ a:active{
 	background-color: #fffcf8;
 	background-image: url(http://www.transparenttextures.com/patterns/blizzard.png);
 }
-
 
 /* Contact */
 
@@ -343,7 +363,6 @@ a:active{
 	text-align: center;
 	border-bottom: dashed 1.5px black;
 }
-
 
 /* Styling */
 
