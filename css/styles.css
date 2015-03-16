@@ -575,7 +575,7 @@ h4 {
   clear: left;
 }
 
-/* Change Borders of Full Size Images */ 
+/* Full Size Images */ 
 
 #fullsize-1:target {
   z-index: 1;
